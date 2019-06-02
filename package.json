@@ -2,7 +2,13 @@
   "name": "javascript-development-environment",
   "version": "1.0.0",
   "description": "JavaScript development environment starter kit",
-  "scripts": {},
+  "scripts": {
+    "prestart": "babel-node buildScripts/startMessage",
+    "start": "babel-node buildScripts/srcServer",
+    "open:src": "babel-node buildScripts/srcServer",
+    "localtunnel": "lt --port 3000",
+    "share": "npm-run-all --parallel open:src localtunnel"
+  },
   "author": "Kevin Siende",
   "license": "MIT",
   "dependencies": {
