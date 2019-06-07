@@ -6,6 +6,8 @@
     "prestart": "babel-node buildScripts/startMessage",
     "start": "babel-node buildScripts/srcServer",
     "open:src": "babel-node buildScripts/srcServer",
+    "lint": "esw webpack.config.* src buidScripts",
+    "lint-watch": "npm run lint --watch",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel"
   },
@@ -17,7 +19,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "6.17.0",
-    "babel-loader": "6.2.5",
+    "babel-loader": "^6.2.5",
     "babel-preset-latest": "6.16.0",
     "babel-register": "6.16.3",
     "chai": "3.5.0",
@@ -34,7 +36,7 @@
     "html-webpack-plugin": "^3.2.0",
     "jsdom": "9.8.0",
     "json-schema-faker": "^0.4.7",
-    "localtunnel": "^1.9.1",
+    "localtunnel": "^1.9.2",
     "mocha": "^6.1.4",
     "npm-run-all": "3.1.1",
     "nsp": "^3.2.1",
