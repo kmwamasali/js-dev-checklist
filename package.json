@@ -39,7 +39,7 @@
     "jsdom": "9.8.0",
     "json-schema-faker": "^0.4.7",
     "localtunnel": "^1.9.2",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "npm-run-all": "3.1.1",
     "numeral": "1.5.3",
     "open": "^6.3.0",
